@@ -1,0 +1,148 @@
+title{
+    display: none;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    display: grid;
+    justify-content: center;
+}
+
+body{
+    background-image: url('https://i.pinimg.com/originals/15/f9/44/15f94498544c7919deadeb78c5ff2260.jpg');
+    background-size: 110% 100%;
+}
+
+p{
+    font-family: "Eurostile";
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    margin-top:10px;
+    margin-bottom: 0;
+}
+
+h3{
+    position: absolute;
+    top: 70px;
+    left: 46vw;
+    font-family: "Eurostile";
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
+
+@font-face {
+    font-family: 'fonte_calculadora';
+    src: url(fonts/fonte.woff);
+}
+
+@font-face {
+    font-family: 'Eurostile';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Eurostile'), url('fonts/eurostile.woff') format('woff');
+}
+
+.calculator{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    grid-template-columns: repeat(5, 120px);
+    grid-template-rows: minmax(120px, auto) repeat(4, 100px);
+    border: 20px solid rgb(17, 17, 22);
+    background-color: rgb(44, 44, 56);
+    grid-row-gap: 20px;
+}
+
+.screen{
+    grid-template-rows: minmax(120px, auto);
+    border: 8px solid rgb(23, 22, 26);
+    padding: 10px;
+}
+
+button{
+    cursor: pointer;
+    height: 90px;
+    font-size: 2rem;
+    border: 1px, solid #FFFFFF;
+    outline: none;
+    background-color: rgb(136, 140, 154);
+    color: white;
+    line-height: 90px;
+    margin: 10px 5px;    
+    border-radius: 8px;
+}
+
+button:hover{
+    background-color: rgb(101, 104, 113);
+}
+
+button:active{
+    background-color: rgb(44, 46, 49);
+}
+
+.delete, .delete_all{
+    background-color: rgb(173, 79, 79);
+}
+
+.delete:hover, .delete_all:hover{
+    background-color: rgb(105, 45, 45);
+}
+
+.delete:active, .delete_all:active{
+    background-color: rgb(58, 21, 21);
+}
+
+.screen{
+        font-family: 'fonte_calculadora';
+        grid-column: span 5;
+        margin: -50px 5px 20px;
+        background-color: rgba(200, 233, 226, 0.685);
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        flex-direction: column;
+        word-wrap: break-word;
+        word-break: break-all;   
+}
+
+.operacao{
+    background-color: rgb(61, 58, 86);
+}
+
+.operacao:hover{
+    background-color: rgb(42, 40, 57);
+}
+
+.operacao:active{
+    background-color: rgb(0, 0, 0);
+}
+.screen #cur_number{
+    color: black;
+    font-size: 4rem;
+}
+
+.screen #prev_number{
+    color: black;
+    font-size: 2.5rem;
+}
+
+#equal{
+    height: 210px;
+    line-height: 210px;
+    background-color: rgb(27, 117, 36);
+}
+
+#equal:hover{
+    background-color: rgb(18, 78, 24);
+}
+
+#equal:active{
+    background-color: rgb(11, 46, 14);
+}
+
+#zero{
+    grid-column: span 2;
+}
