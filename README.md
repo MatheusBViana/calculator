@@ -1,2 +1,4 @@
-# calculator
-A simple calculator using HTML, CSS &amp; Javascript
+# Calculator
+A simple calculator using HTML, CSS &amp; Javascript:
+
+<img src="https://i.imgur.com/qBk94LI.png">
